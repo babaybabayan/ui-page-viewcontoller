@@ -35,11 +35,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonTapped(_ sender: UIButton) {
-        if sender == tabButton1 {
-            scrollTo(next: false)
-        } else {
-            scrollTo(next: true)
-        }
+        scrollTo(next: sender == tabButton2)
     }
 }
 
